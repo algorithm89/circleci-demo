@@ -13,6 +13,5 @@ jobs:
             chmod 755 /bin/ping
             apk add sudo
             nslookup gamespot.com
-            whois
-            
+            nslookup google.com
             dig gamespot.com
