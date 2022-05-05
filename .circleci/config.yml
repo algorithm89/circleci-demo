@@ -4,23 +4,16 @@ jobs:
   build:
     working_directory: ~/circleci-python
     docker:
-      - image: "circleci/python:3.6.4"
+      - image: "docker pull bash:latest"
     steps:
       - checkout
       - run: python3 main.py
-  test:
-    working_directory: ~/circleci-python
-    docker:
-      - image: "circleci/python:3.6.4"
-    steps:
-      - checkout
-      - run: python3 main.py
+        command: nslookup google.com && ping google.com
+
 
 
 workflows:
   build_and_test:
-    jobs:
-      - build
-      - test:
-          requires:
-            - build
+    run-jobs:
+      jobs:
+          - build

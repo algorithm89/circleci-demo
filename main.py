@@ -18,5 +18,4 @@ def checkDir():
 
 
 if __name__ == '__main__':
-    SayHello()
     checkDir()
