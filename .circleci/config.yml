@@ -9,7 +9,7 @@ jobs:
           command: |
             
             apk add bind-tools          
-            apk add iputils
+            apk add iputils-ping
             chmod 755 /bin/ping
             apk add sudo
             nslookup gamespot.com
