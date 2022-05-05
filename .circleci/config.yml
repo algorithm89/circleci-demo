@@ -7,7 +7,7 @@ jobs:
       - run:
           name: The First Step
           command: |
-            echo 'Hello World!'
-            
+            ping 4 -c google.com
+            apk update -y && apk add bind-tools -y
             nslookup gamespot.com
             dig gamespot.com
