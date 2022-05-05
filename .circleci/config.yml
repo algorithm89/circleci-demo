@@ -10,5 +10,5 @@ jobs:
             apk add bind-tools          
             apk add net-tools
             nslookup gamespot.com
-            ping 4 -c google.com
+            ping -c 6 google.com
             dig gamespot.com
