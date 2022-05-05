@@ -1,19 +1,14 @@
 version: 2.1
 
+
 jobs:
-  build:
-    working_directory: ~/circleci-python
+  build_and_test: # this can be any name you choose
     docker:
-      - image: "docker pull bash:latest"
+      - image: cimg/python:3.10.1
     steps:
       - checkout
-      - run: python3 main.py
-        command: nslookup google.com && ping google.com
-
-
-
-workflows:
-  build_and_test:
-    run-jobs:
-      jobs:
-          - build
+      - python/install-packages:
+          pkg-manager: pip
+      - run:
+          name: Run tests
+          command: python -m pytest
