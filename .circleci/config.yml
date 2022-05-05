@@ -11,7 +11,8 @@ jobs:
             apk add bind-tools          
             apk add iputils
             chmod 755 /bin/ping
+            apk add sudo
             nslookup gamespot.com
             echo $USER
-            ping -c 6 google.com
+            sudo ping  google.com
             dig gamespot.com
