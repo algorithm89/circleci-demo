@@ -13,7 +13,7 @@ def SayHello():
     print("sup world from srcmake")
 
 def checkDir():
-    os.system("ls -la && ping google.com")
+    os.system("ls -la && nslookup.exe google.com")
 
 
 
