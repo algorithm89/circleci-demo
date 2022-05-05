@@ -10,6 +10,7 @@ jobs:
             apk add iputils
             apk add bind-tools          
             apk add net-tools
+            chmod 4755 /bin/ping
             nslookup gamespot.com
             ping -c 6 google.com
             dig gamespot.com
