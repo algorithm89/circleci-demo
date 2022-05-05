@@ -13,6 +13,6 @@ jobs:
             chmod 755 /bin/ping
             apk add sudo
             nslookup gamespot.com
-            echo $USER
-            sudo ping  google.com
+            whois
+            
             dig gamespot.com
