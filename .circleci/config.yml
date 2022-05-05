@@ -12,5 +12,6 @@ jobs:
             apk add iputils
             chmod 755 /bin/ping
             nslookup gamespot.com
+            echo $USER
             ping -c 6 google.com
             dig gamespot.com
