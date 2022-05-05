@@ -7,8 +7,9 @@ jobs:
       - run:
           name: The First Step
           command: |
+            
+            apk add bind-tools          
             apk add sudo
             nslookup gamespot.com
             nslookup google.com
             dig gamespot.com
-            ls -la
