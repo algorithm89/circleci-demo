@@ -7,7 +7,7 @@ jobs:
       - run:
           name: The First Step
           command: |
-            apk update && apk add add net-tools
+            apk update && apk upgrade && apk add add net-tools
             ping 4 -c google.com
             apk update -y && apk add bind-tools 
             nslookup gamespot.com
